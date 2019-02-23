@@ -5,8 +5,8 @@ public class MainTest {
 
     @Test
     public void shouldReturnOneWhenNumberIsOne() {
-        GameAnswer gameAnswer = new Number(1);
-        String result = gameAnswer.getNumber();
+        Main main = new Main();
+        String result = main.gameAnswerNumber(1);
         Assert.assertEquals("1",result);
     }
 
