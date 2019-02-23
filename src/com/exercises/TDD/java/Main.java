@@ -7,6 +7,8 @@ public class Main {
         for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
             if (multipleOfFifteen(givenNumber))
                 System.out.println(gameAnswerFizzBuzz(givenNumber));
+            else if (multipleOfThree(givenNumber)&& consistOfNumberFiveAtLeft(givenNumber))
+                System.out.println(gameAnswerFizzBuzz(givenNumber));
             else if (multipleOfFive(givenNumber) || consistOfNumberFiveAtLeft(givenNumber))
                 System.out.println(gameAnswerBuzz(givenNumber));
             else if (multipleOfThree(givenNumber) || consistOfNumberThreeAtRight(givenNumber) || consistOfNumberThreeAtLeft(givenNumber))
