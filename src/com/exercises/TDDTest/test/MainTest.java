@@ -28,10 +28,8 @@ public class MainTest {
 
     @Test
     public void shouldReturnBuzzWhenNumberIsFive() {
-        GameAnswer gameAnswer = new Buzz(5);
-
-        AnswerStatus result = gameAnswer.getAnswerStatus();
-        Assert.assertEquals("Buzz", result.name());
+        String result = main.gameAnswerBuzz(5);
+        Assert.assertEquals("Buzz",result);
     }
 
     @Test

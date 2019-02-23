@@ -17,4 +17,10 @@ public class Main {
         AnswerStatus result = gameAnswer.getAnswerStatus();
         return result.name();
     }
+
+    public String gameAnswerBuzz(int i) {
+        GameAnswer gameAnswer = new Buzz(5);
+        AnswerStatus result = gameAnswer.getAnswerStatus();
+        return result.name();
+    }
 }
