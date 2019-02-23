@@ -42,7 +42,7 @@ public class MainTest {
     @Test
     public void ShouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfFive() {
         for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
-            if (givenNumber%5==0)
+            if (Main.multipleOfFive(givenNumber))
                 Assert.assertEquals("Buzz" , Main.gameAnswerBuzz(givenNumber));
         }
     }

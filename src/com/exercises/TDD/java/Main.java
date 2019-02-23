@@ -50,4 +50,8 @@ public class Main {
     public static boolean multipleOfFifteen(int givenNumber) {
         return givenNumber % 15 == 0;
     }
+
+    public static boolean multipleOfFive(int givenNumber) {
+        return givenNumber % 5 ==0;
+    }
 }
