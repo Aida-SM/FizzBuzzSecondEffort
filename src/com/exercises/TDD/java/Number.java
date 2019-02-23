@@ -1,10 +1,8 @@
-public class Number extends GameAnswer {
+public class Number  {
 
-    public Number(int number) {
-        super(number);
-    }
-    @Override
-    public AnswerStatus getAnswerStatus() {
-        return null;
+
+    public static String getNumber(int NormalNumber) {
+
+        return String.valueOf(NormalNumber);
     }
 }
