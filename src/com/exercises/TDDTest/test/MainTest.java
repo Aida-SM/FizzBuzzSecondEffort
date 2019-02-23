@@ -16,4 +16,12 @@ public class MainTest {
         AnswerStatus result = gameAnswer.getAnswerStatus();
         Assert.assertEquals("Fizz",result.name());
     }
+
+    @Test
+    public void shouldReturnBuzzWhenNumberIsFive() {
+        GameAnswer gameAnswer = new Buzz(5);
+        AnswerStatus result = gameAnswer.getAnswerStatus();
+        Assert.assertEquals("Buzz", result.name());
+    }
+
 }
