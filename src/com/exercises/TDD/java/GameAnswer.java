@@ -5,10 +5,5 @@ public abstract class GameAnswer {
         this.number = number;
     }
 
-
-    public  String getNumber() {
-        return String.valueOf(number);
-    }
-
     public abstract AnswerStatus getAnswerStatus();
 }
