@@ -5,7 +5,7 @@ public class Main {
 
         Main main = new Main();
         for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
-            if (givenNumber % 15 == 0)
+            if (main.multipleOfFifteen(givenNumber))
                 System.out.println(main.gameAnswerFizzBuzz(givenNumber));
             else if (givenNumber % 5 == 0)
                 System.out.println(main.gameAnswerBuzz(givenNumber));
@@ -45,5 +45,9 @@ public class Main {
     private String getFinalResult(GameAnswer gameAnswer) {
         AnswerStatus result = gameAnswer.getAnswerStatus();
         return result.name();
+    }
+
+    public boolean multipleOfFifteen(int givennumber) {
+        return givennumber % 15 == 0;
     }
 }
