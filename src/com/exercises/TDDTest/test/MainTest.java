@@ -15,19 +15,19 @@ public class MainTest {
 
     @Test
     public void shouldReturnFizzWhenNumberIsThree() {
-        String result = Main.gameAnswerFizz(3);
+        String result = Main.gameAnswerFizz();
         Assert.assertEquals("Fizz",result);
     }
 
     @Test
     public void shouldReturnBuzzWhenNumberIsFive() {
-        String result = Main.gameAnswerBuzz(5);
+        String result = Main.gameAnswerBuzz();
         Assert.assertEquals("Buzz",result);
     }
 
     @Test
     public void shouldReturnFizzBuzzWhenNumberIsFifteen() {
-        String result = Main.gameAnswerFizzBuzz(15);
+        String result = Main.gameAnswerFizzBuzz();
         Assert.assertEquals("FizzBuzz",result);
     }
 
@@ -35,7 +35,7 @@ public class MainTest {
     public void shouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfThree() {
         for ( int number = 1; number<=100; number++){
             if (Main.multipleOfThree(number))
-                Assert.assertEquals("Fizz" , Main.gameAnswerFizz(number));
+                Assert.assertEquals("Fizz" , Main.gameAnswerFizz());
         }
     }
 
@@ -43,7 +43,7 @@ public class MainTest {
     public void shouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfFive() {
         for ( int number = 1; number<=100; number++){
             if (Main.multipleOfFive(number))
-                Assert.assertEquals("Buzz" , Main.gameAnswerBuzz(number));
+                Assert.assertEquals("Buzz" , Main.gameAnswerBuzz());
         }
     }
 
@@ -51,7 +51,7 @@ public class MainTest {
     public void shouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfFifteen() {
         for ( int number = 1; number<=100; number++){
             if (Main.multipleOfFifteen(number))
-                Assert.assertEquals("FizzBuzz" , Main.gameAnswerFizzBuzz(number));
+                Assert.assertEquals("FizzBuzz" , Main.gameAnswerFizzBuzz());
         }
     }
 
@@ -59,7 +59,7 @@ public class MainTest {
     public void shouldReturnFizzWhenNumberConsistOfThreeAtRight() {
         int number = 43;
         if(Main.consistOfNumberThreeAtRight(number))
-            Assert.assertEquals("Fizz" , Main.gameAnswerFizz(number));
+            Assert.assertEquals("Fizz" , Main.gameAnswerFizz());
 
     }
 
@@ -67,7 +67,7 @@ public class MainTest {
     public void shouldReturnFizzWhenNumberConsistOfThreeAtLeft() {
         int number = 34;
         if(Main.consistOfNumberThreeAtLeft(number))
-            Assert.assertEquals("Fizz" , Main.gameAnswerFizz(number));
+            Assert.assertEquals("Fizz" , Main.gameAnswerFizz());
 
     }
 
@@ -75,27 +75,27 @@ public class MainTest {
     public void shouldReturnBuzzWhenNumberConsistOfFiveAtLeft() {
         int number = 54;
         if (Main.consistOfNumberFiveAtLeft(number))
-            Assert.assertEquals("Buzz", Main.gameAnswerBuzz(number));
+            Assert.assertEquals("Buzz", Main.gameAnswerBuzz());
     }
 
     @Test
     public void  shouldReturnFizzBuzzWhenNumberConsistOfFiveAtLeftAndMultipleOfThree() {
         int number = 51;
         if (Main.multipleOfThree(number) && Main.consistOfNumberFiveAtLeft(number))
-            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz(number));
+            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz());
     }
 
     @Test
     public void  shouldReturnFizzBuzzWhenNumberConsistOfthreeAtLeftAndMultipleOfFive() {
         int number = 35;
         if (Main.multipleOfFive(number) && Main.consistOfNumberThreeAtLeft(number))
-            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz(number));
+            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz());
     }
 
     @Test
     public void  shouldReturnFizzBuzzWhenNumberConsistOfFiveAtLeftAndThreeAtRight() {
         int number = 53;
         if (Main.consistOfNumberThreeAtRight(number) && Main.consistOfNumberFiveAtLeft(number))
-            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz(number));
+            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz());
     }
 }
