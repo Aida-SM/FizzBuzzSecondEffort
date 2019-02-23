@@ -43,8 +43,14 @@ public class MainTest {
         for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
             if (givenNumber%3==0)
                 Assert.assertEquals("Fizz" , main.gameAnswerFizz(givenNumber));
-
         }
     }
 
+    @Test
+    public void ShouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfFive() {
+        for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
+            if (givenNumber%5==0)
+                Assert.assertEquals("Buzz" , main.gameAnswerBuzz(givenNumber));
+        }
+    }
 }

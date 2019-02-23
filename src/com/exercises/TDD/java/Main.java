@@ -19,7 +19,7 @@ public class Main {
     }
 
     public String gameAnswerBuzz(int givenNumber) {
-        GameAnswer gameAnswer = new Buzz(5);
+        GameAnswer gameAnswer = new Buzz(givenNumber);
         AnswerStatus result = gameAnswer.getAnswerStatus();
         return result.name();
     }
