@@ -56,9 +56,11 @@ public class MainTest {
     }
 
     @Test
-    public void ShouldCheckIfNumberConsistOfThreeAtRight() {
+    public void ShouldReturnFizzWhenNumberConsistOfThreeAtRight() {
         int givenNumber = 43;
-        Assert.assertEquals(3, givenNumber% 10);
+        if(Main.consistOfNumberThreeAtRight(givenNumber))
+            Assert.assertEquals("Fizz" , Main.gameAnswerFizz(givenNumber));
+
     }
 
 

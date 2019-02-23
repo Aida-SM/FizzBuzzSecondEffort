@@ -58,4 +58,8 @@ public class Main {
     public static boolean multipleOfThree(int givenNumber) {
         return givenNumber % 3 == 0;
     }
+
+    public static boolean consistOfNumberThreeAtRight(int givenNumber) {
+        return givenNumber / 10 == 0;
+    }
 }
