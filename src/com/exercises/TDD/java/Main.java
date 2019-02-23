@@ -66,4 +66,8 @@ public class Main {
     public static boolean consistOfNumberThreeAtLeft(int givenNumber) {
         return givenNumber / 10 == 3;
     }
+
+    public static boolean consistOfNumberFiveAtLeft(int givenNumber) {
+        return givenNumber / 10 == 5;
+    }
 }

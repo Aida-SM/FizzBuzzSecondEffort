@@ -71,6 +71,10 @@ public class MainTest {
 
     }
 
-
-
+    @Test
+    public void shouldReturnBuzzWhenNumberConsistOfFiveAtLeft() {
+        int givenNumber = 54;
+        if (Main.consistOfNumberFiveAtLeft(givenNumber))
+            Assert.assertEquals("Buzz", Main.gameAnswerBuzz(givenNumber));
+    }
 }
