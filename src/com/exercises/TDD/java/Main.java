@@ -60,6 +60,6 @@ public class Main {
     }
 
     public static boolean consistOfNumberThreeAtRight(int givenNumber) {
-        return givenNumber / 10 == 0;
+        return givenNumber % 10 == 3;
     }
 }
