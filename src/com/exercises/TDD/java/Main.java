@@ -26,6 +26,10 @@ public class Main {
 
     public String gameAnswerFizzBuzz(int i) {
         GameAnswer gameAnswer = new FizzBuzz(15);
+        return getFinalResult(gameAnswer);
+    }
+
+    private String getFinalResult(GameAnswer gameAnswer) {
         AnswerStatus result = gameAnswer.getAnswerStatus();
         return result.name();
     }
