@@ -32,7 +32,7 @@ public class MainTest {
     }
 
     @Test
-    public void ShouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfThree() {
+    public void shouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfThree() {
         for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
             if (Main.multipleOfThree(givenNumber))
                 Assert.assertEquals("Fizz" , Main.gameAnswerFizz(givenNumber));
@@ -40,7 +40,7 @@ public class MainTest {
     }
 
     @Test
-    public void ShouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfFive() {
+    public void shouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfFive() {
         for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
             if (Main.multipleOfFive(givenNumber))
                 Assert.assertEquals("Buzz" , Main.gameAnswerBuzz(givenNumber));
@@ -48,7 +48,7 @@ public class MainTest {
     }
 
     @Test
-    public void ShouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfFifteen() {
+    public void shouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfFifteen() {
         for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
             if (Main.multipleOfFifteen(givenNumber))
                 Assert.assertEquals("FizzBuzz" , Main.gameAnswerFizzBuzz(givenNumber));
@@ -56,7 +56,7 @@ public class MainTest {
     }
 
     @Test
-    public void ShouldReturnFizzWhenNumberConsistOfThreeAtRight() {
+    public void shouldReturnFizzWhenNumberConsistOfThreeAtRight() {
         int givenNumber = 43;
         if(Main.consistOfNumberThreeAtRight(givenNumber))
             Assert.assertEquals("Fizz" , Main.gameAnswerFizz(givenNumber));
@@ -64,7 +64,7 @@ public class MainTest {
     }
 
     @Test
-    public void ShouldReturnFizzWhenNumberConsistOfThreeAtLeft() {
+    public void shouldReturnFizzWhenNumberConsistOfThreeAtLeft() {
         int givenNumber = 34;
         if(Main.consistOfNumberThreeAtLeft(givenNumber))
             Assert.assertEquals("Fizz" , Main.gameAnswerFizz(givenNumber));
