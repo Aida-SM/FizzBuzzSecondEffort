@@ -11,6 +11,8 @@ public class Main {
                 System.out.println(gameAnswerFizzBuzz(givenNumber));
             else if (multipleOfFive(givenNumber)&& consistOfNumberThreeAtLeft(givenNumber))
                 System.out.println(gameAnswerFizzBuzz(givenNumber));
+            else if (consistOfNumberFiveAtLeft(givenNumber) && consistOfNumberThreeAtRight(givenNumber))
+                System.out.println(gameAnswerFizzBuzz(givenNumber));
             else if (multipleOfFive(givenNumber) || consistOfNumberFiveAtLeft(givenNumber))
                 System.out.println(gameAnswerBuzz(givenNumber));
             else if (multipleOfThree(givenNumber) || consistOfNumberThreeAtRight(givenNumber) || consistOfNumberThreeAtLeft(givenNumber))
