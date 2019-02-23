@@ -54,4 +54,8 @@ public class Main {
     public static boolean multipleOfFive(int givenNumber) {
         return givenNumber % 5 ==0;
     }
+
+    public static boolean multipleOfThree(int givenNumber) {
+        return givenNumber % 3 == 0;
+    }
 }
