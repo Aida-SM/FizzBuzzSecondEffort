@@ -62,4 +62,8 @@ public class Main {
     public static boolean consistOfNumberThreeAtRight(int givenNumber) {
         return givenNumber % 10 == 3;
     }
+
+    public static boolean consistOfNumberThreeAtLeft(int givenNumber) {
+        return givenNumber / 10 == 3;
+    }
 }

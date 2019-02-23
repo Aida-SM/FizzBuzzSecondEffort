@@ -63,6 +63,14 @@ public class MainTest {
 
     }
 
+    @Test
+    public void ShouldReturnFizzWhenNumberConsistOfThreeAtLeft() {
+        int givenNumber = 34;
+        if(Main.consistOfNumberThreeAtLeft(givenNumber))
+            Assert.assertEquals("Fizz" , Main.gameAnswerFizz(givenNumber));
+
+    }
+
 
 
 }
