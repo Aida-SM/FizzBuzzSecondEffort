@@ -47,7 +47,7 @@ public class Main {
         return result.name();
     }
 
-    public static boolean multipleOfFifteen(int givennumber) {
-        return givennumber % 15 == 0;
+    public static boolean multipleOfFifteen(int givenNumber) {
+        return givenNumber % 15 == 0;
     }
 }
