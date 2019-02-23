@@ -6,17 +6,17 @@ public class Main {
 
         for ( int number = 1; number<=100; number++){
             if (multipleOfFifteen(number))
-                System.out.println(gameAnswerFizzBuzz(number));
+                System.out.println(gameAnswerFizzBuzz());
             else if (multipleOfThree(number)&& consistOfNumberFiveAtLeft(number))
-                System.out.println(gameAnswerFizzBuzz(number));
+                System.out.println(gameAnswerFizzBuzz());
             else if (multipleOfFive(number)&& consistOfNumberThreeAtLeft(number))
-                System.out.println(gameAnswerFizzBuzz(number));
+                System.out.println(gameAnswerFizzBuzz());
             else if (consistOfNumberFiveAtLeft(number) && consistOfNumberThreeAtRight(number))
-                System.out.println(gameAnswerFizzBuzz(number));
+                System.out.println(gameAnswerFizzBuzz());
             else if (multipleOfFive(number) || consistOfNumberFiveAtLeft(number))
-                System.out.println(gameAnswerBuzz(number));
+                System.out.println(gameAnswerBuzz());
             else if (multipleOfThree(number) || consistOfNumberThreeAtRight(number) || consistOfNumberThreeAtLeft(number))
-                System.out.println(gameAnswerFizz(number));
+                System.out.println(gameAnswerFizz());
             else
                 System.out.println(gameAnswerNumber(number));
         }
@@ -30,20 +30,20 @@ public class Main {
 
     }
 
-    public static String gameAnswerFizz(int givenNumber) {
-        GameAnswer gameAnswer = new Fizz(givenNumber);
+    public static String gameAnswerFizz() {
+        GameAnswer gameAnswer = new Fizz();
         AnswerStatus result = gameAnswer.getAnswerStatus();
         return result.name();
     }
 
-    public static String gameAnswerBuzz(int givenNumber) {
-        GameAnswer gameAnswer = new Buzz(givenNumber);
+    public static String gameAnswerBuzz() {
+        GameAnswer gameAnswer = new Buzz();
         AnswerStatus result = gameAnswer.getAnswerStatus();
         return result.name();
     }
 
-    public static String gameAnswerFizzBuzz(int givenNumber) {
-        GameAnswer gameAnswer = new FizzBuzz(givenNumber);
+    public static String gameAnswerFizzBuzz() {
+        GameAnswer gameAnswer = new FizzBuzz();
         return getFinalResult(gameAnswer);
     }
 
