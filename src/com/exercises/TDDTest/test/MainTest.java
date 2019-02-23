@@ -45,7 +45,6 @@ public class MainTest {
                 Assert.assertEquals("Fizz" , main.gameAnswerFizz(givenNumber));
 
         }
-
-
     }
+
 }
