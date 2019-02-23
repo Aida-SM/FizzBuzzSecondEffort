@@ -1,11 +1,21 @@
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
+
+import java.util.PrimitiveIterator;
 
 public class MainTest {
 
+    private Main main;
+
+
+    @Before
+    public void setUp() throws Exception {
+        main = new Main();
+    }
+
     @Test
     public void shouldReturnOneWhenNumberIsOne() {
-        Main main = new Main();
         String result = main.gameAnswerNumber(1);
         Assert.assertEquals("1",result);
     }
