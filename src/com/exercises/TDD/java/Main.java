@@ -13,7 +13,7 @@ public class Main {
     }
 
     public String gameAnswerFizz(int givenNumber) {
-        GameAnswer gameAnswer = new Fizz(3);
+        GameAnswer gameAnswer = new Fizz(givenNumber);
         AnswerStatus result = gameAnswer.getAnswerStatus();
         return result.name();
     }
