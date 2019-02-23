@@ -12,19 +12,19 @@ public class Main {
 
     }
 
-    public String gameAnswerFizz(int i) {
+    public String gameAnswerFizz(int givenNumber) {
         GameAnswer gameAnswer = new Fizz(3);
         AnswerStatus result = gameAnswer.getAnswerStatus();
         return result.name();
     }
 
-    public String gameAnswerBuzz(int i) {
+    public String gameAnswerBuzz(int givenNumber) {
         GameAnswer gameAnswer = new Buzz(5);
         AnswerStatus result = gameAnswer.getAnswerStatus();
         return result.name();
     }
 
-    public String gameAnswerFizzBuzz(int i) {
+    public String gameAnswerFizzBuzz(int givenNumber) {
         GameAnswer gameAnswer = new FizzBuzz(15);
         return getFinalResult(gameAnswer);
     }
