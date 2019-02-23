@@ -84,4 +84,11 @@ public class MainTest {
         if (Main.multipleOfThree(givenNumber) && Main.consistOfNumberFiveAtLeft(givenNumber))
             Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz(givenNumber));
     }
+
+    @Test
+    public void  shouldReturnFizzBuzzWhenNumberConsistOfthreeAtLeftAndMultipleOfFive() {
+        int givenNumber = 35;
+        if (Main.multipleOfFive(givenNumber) && Main.consistOfNumberThreeAtLeft(givenNumber))
+            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz(givenNumber));
+    }
 }
