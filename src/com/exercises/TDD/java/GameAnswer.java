@@ -5,6 +5,7 @@ public abstract class GameAnswer {
     }
 
 
-
-
+    public  String getNumber() {
+        return "1";
+    }
 }
