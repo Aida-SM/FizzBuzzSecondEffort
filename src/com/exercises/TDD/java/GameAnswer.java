@@ -6,6 +6,6 @@ public abstract class GameAnswer {
 
 
     public  String getNumber() {
-        return String.valueOf(1);
+        return String.valueOf(number);
     }
 }
