@@ -23,4 +23,10 @@ public class Main {
         AnswerStatus result = gameAnswer.getAnswerStatus();
         return result.name();
     }
+
+    public String gameAnswerFizzBuzz(int i) {
+        GameAnswer gameAnswer = new FizzBuzz(15);
+        AnswerStatus result = gameAnswer.getAnswerStatus();
+        return result.name();
+    }
 }

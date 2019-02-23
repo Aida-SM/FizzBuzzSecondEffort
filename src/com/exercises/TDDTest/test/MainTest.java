@@ -34,8 +34,7 @@ public class MainTest {
 
     @Test
     public void shouldReturnFizzBuzzWhenNumberIsFifteen() {
-        GameAnswer gameAnswer = new FizzBuzz(15);
-        AnswerStatus result = gameAnswer.getAnswerStatus();
-        Assert.assertEquals("FizzBuzz" , result.name());
+        String result = main.gameAnswerFizzBuzz(15);
+        Assert.assertEquals("FizzBuzz",result);
     }
 }
