@@ -37,4 +37,15 @@ public class MainTest {
         String result = main.gameAnswerFizzBuzz(15);
         Assert.assertEquals("FizzBuzz",result);
     }
+
+    @Test
+    public void ShouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfThree() {
+        for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
+            if (givenNumber%3==0)
+                Assert.assertEquals("Fizz" , main.gameAnswerFizz(givenNumber));
+
+        }
+
+
+    }
 }
