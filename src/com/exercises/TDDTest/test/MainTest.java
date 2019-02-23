@@ -10,5 +10,10 @@ public class MainTest {
         Assert.assertEquals("1",result);
     }
 
-
+    @Test
+    public void shouldReturnFizzWhenNumberIsThree() {
+        GameAnswer gameAnswer = new Fizz(3);
+        AnswerStatus result = gameAnswer.getAnswerStatus();
+        Assert.assertEquals("Fizz",result.name());
+    }
 }

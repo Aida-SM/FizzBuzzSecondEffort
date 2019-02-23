@@ -3,5 +3,8 @@ public class FizzBuzz extends GameAnswer {
         super(number);
     }
 
-
+    @Override
+    public AnswerStatus getAnswerStatus() {
+        return AnswerStatus.FizzBuzz;
+    }
 }

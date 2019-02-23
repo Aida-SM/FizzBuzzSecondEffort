@@ -3,5 +3,8 @@ public class Buzz extends GameAnswer {
         super(number);
     }
 
-
+    @Override
+    public AnswerStatus getAnswerStatus() {
+        return AnswerStatus.Buzz;
+    }
 }

@@ -3,4 +3,8 @@ public class Number extends GameAnswer {
         super(number);
     }
 
+    @Override
+    public AnswerStatus getAnswerStatus() {
+        return null;
+    }
 }
