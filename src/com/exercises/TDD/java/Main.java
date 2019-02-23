@@ -7,9 +7,9 @@ public class Main {
         for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
             if (multipleOfFifteen(givenNumber))
                 System.out.println(gameAnswerFizzBuzz(givenNumber));
-            else if (givenNumber % 5 == 0)
+            else if (multipleOfFive(givenNumber))
                 System.out.println(gameAnswerBuzz(givenNumber));
-            else if (givenNumber % 3 == 0)
+            else if (multipleOfThree(givenNumber))
                 System.out.println(gameAnswerFizz(givenNumber));
             else
                 System.out.println(gameAnswerNumber(givenNumber));
