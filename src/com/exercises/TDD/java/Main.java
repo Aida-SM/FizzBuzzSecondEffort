@@ -3,16 +3,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Main main = new Main();
+
         for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
             if (multipleOfFifteen(givenNumber))
-                System.out.println(main.gameAnswerFizzBuzz(givenNumber));
+                System.out.println(gameAnswerFizzBuzz(givenNumber));
             else if (givenNumber % 5 == 0)
-                System.out.println(main.gameAnswerBuzz(givenNumber));
+                System.out.println(gameAnswerBuzz(givenNumber));
             else if (givenNumber % 3 == 0)
-                System.out.println(main.gameAnswerFizz(givenNumber));
+                System.out.println(gameAnswerFizz(givenNumber));
             else
-                System.out.println(main.gameAnswerNumber(givenNumber));
+                System.out.println(gameAnswerNumber(givenNumber));
         }
 
 
