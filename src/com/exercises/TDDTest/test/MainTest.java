@@ -33,69 +33,69 @@ public class MainTest {
 
     @Test
     public void shouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfThree() {
-        for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
-            if (Main.multipleOfThree(givenNumber))
-                Assert.assertEquals("Fizz" , Main.gameAnswerFizz(givenNumber));
+        for ( int number = 1; number<=100; number++){
+            if (Main.multipleOfThree(number))
+                Assert.assertEquals("Fizz" , Main.gameAnswerFizz(number));
         }
     }
 
     @Test
     public void shouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfFive() {
-        for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
-            if (Main.multipleOfFive(givenNumber))
-                Assert.assertEquals("Buzz" , Main.gameAnswerBuzz(givenNumber));
+        for ( int number = 1; number<=100; number++){
+            if (Main.multipleOfFive(number))
+                Assert.assertEquals("Buzz" , Main.gameAnswerBuzz(number));
         }
     }
 
     @Test
     public void shouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfFifteen() {
-        for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
-            if (Main.multipleOfFifteen(givenNumber))
-                Assert.assertEquals("FizzBuzz" , Main.gameAnswerFizzBuzz(givenNumber));
+        for ( int number = 1; number<=100; number++){
+            if (Main.multipleOfFifteen(number))
+                Assert.assertEquals("FizzBuzz" , Main.gameAnswerFizzBuzz(number));
         }
     }
 
     @Test
     public void shouldReturnFizzWhenNumberConsistOfThreeAtRight() {
-        int givenNumber = 43;
-        if(Main.consistOfNumberThreeAtRight(givenNumber))
-            Assert.assertEquals("Fizz" , Main.gameAnswerFizz(givenNumber));
+        int number = 43;
+        if(Main.consistOfNumberThreeAtRight(number))
+            Assert.assertEquals("Fizz" , Main.gameAnswerFizz(number));
 
     }
 
     @Test
     public void shouldReturnFizzWhenNumberConsistOfThreeAtLeft() {
-        int givenNumber = 34;
-        if(Main.consistOfNumberThreeAtLeft(givenNumber))
-            Assert.assertEquals("Fizz" , Main.gameAnswerFizz(givenNumber));
+        int number = 34;
+        if(Main.consistOfNumberThreeAtLeft(number))
+            Assert.assertEquals("Fizz" , Main.gameAnswerFizz(number));
 
     }
 
     @Test
     public void shouldReturnBuzzWhenNumberConsistOfFiveAtLeft() {
-        int givenNumber = 54;
-        if (Main.consistOfNumberFiveAtLeft(givenNumber))
-            Assert.assertEquals("Buzz", Main.gameAnswerBuzz(givenNumber));
+        int number = 54;
+        if (Main.consistOfNumberFiveAtLeft(number))
+            Assert.assertEquals("Buzz", Main.gameAnswerBuzz(number));
     }
 
     @Test
     public void  shouldReturnFizzBuzzWhenNumberConsistOfFiveAtLeftAndMultipleOfThree() {
-        int givenNumber = 51;
-        if (Main.multipleOfThree(givenNumber) && Main.consistOfNumberFiveAtLeft(givenNumber))
-            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz(givenNumber));
+        int number = 51;
+        if (Main.multipleOfThree(number) && Main.consistOfNumberFiveAtLeft(number))
+            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz(number));
     }
 
     @Test
     public void  shouldReturnFizzBuzzWhenNumberConsistOfthreeAtLeftAndMultipleOfFive() {
-        int givenNumber = 35;
-        if (Main.multipleOfFive(givenNumber) && Main.consistOfNumberThreeAtLeft(givenNumber))
-            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz(givenNumber));
+        int number = 35;
+        if (Main.multipleOfFive(number) && Main.consistOfNumberThreeAtLeft(number))
+            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz(number));
     }
 
     @Test
     public void  shouldReturnFizzBuzzWhenNumberConsistOfFiveAtLeftAndThreeAtRight() {
-        int givenNumber = 53;
-        if (Main.consistOfNumberThreeAtRight(givenNumber) && Main.consistOfNumberFiveAtLeft(givenNumber))
-            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz(givenNumber));
+        int number = 53;
+        if (Main.consistOfNumberThreeAtRight(number) && Main.consistOfNumberFiveAtLeft(number))
+            Assert.assertEquals("FizzBuzz", Main.gameAnswerFizzBuzz(number));
     }
 }

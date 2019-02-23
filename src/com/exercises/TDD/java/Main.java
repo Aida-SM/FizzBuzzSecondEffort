@@ -4,21 +4,21 @@ public class Main {
     public static void main(String[] args) {
 
 
-        for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
-            if (multipleOfFifteen(givenNumber))
-                System.out.println(gameAnswerFizzBuzz(givenNumber));
-            else if (multipleOfThree(givenNumber)&& consistOfNumberFiveAtLeft(givenNumber))
-                System.out.println(gameAnswerFizzBuzz(givenNumber));
-            else if (multipleOfFive(givenNumber)&& consistOfNumberThreeAtLeft(givenNumber))
-                System.out.println(gameAnswerFizzBuzz(givenNumber));
-            else if (consistOfNumberFiveAtLeft(givenNumber) && consistOfNumberThreeAtRight(givenNumber))
-                System.out.println(gameAnswerFizzBuzz(givenNumber));
-            else if (multipleOfFive(givenNumber) || consistOfNumberFiveAtLeft(givenNumber))
-                System.out.println(gameAnswerBuzz(givenNumber));
-            else if (multipleOfThree(givenNumber) || consistOfNumberThreeAtRight(givenNumber) || consistOfNumberThreeAtLeft(givenNumber))
-                System.out.println(gameAnswerFizz(givenNumber));
+        for ( int number = 1; number<=100; number++){
+            if (multipleOfFifteen(number))
+                System.out.println(gameAnswerFizzBuzz(number));
+            else if (multipleOfThree(number)&& consistOfNumberFiveAtLeft(number))
+                System.out.println(gameAnswerFizzBuzz(number));
+            else if (multipleOfFive(number)&& consistOfNumberThreeAtLeft(number))
+                System.out.println(gameAnswerFizzBuzz(number));
+            else if (consistOfNumberFiveAtLeft(number) && consistOfNumberThreeAtRight(number))
+                System.out.println(gameAnswerFizzBuzz(number));
+            else if (multipleOfFive(number) || consistOfNumberFiveAtLeft(number))
+                System.out.println(gameAnswerBuzz(number));
+            else if (multipleOfThree(number) || consistOfNumberThreeAtRight(number) || consistOfNumberThreeAtLeft(number))
+                System.out.println(gameAnswerFizz(number));
             else
-                System.out.println(gameAnswerNumber(givenNumber));
+                System.out.println(gameAnswerNumber(number));
         }
 
 
