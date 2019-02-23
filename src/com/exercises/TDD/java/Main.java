@@ -26,8 +26,7 @@ public class Main {
 
 
     public static String gameAnswerNumber(int givenNumber) {
-        GameAnswer gameAnswer = new Number(givenNumber);
-        return gameAnswer.getNumber();
+        return Number.getNumber(givenNumber);
 
     }
 
