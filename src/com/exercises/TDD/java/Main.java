@@ -19,8 +19,8 @@ public class Main {
     }
 
 
-    public String gameAnswerNumber(int i) {
-        GameAnswer gameAnswer = new Number(1);
+    public String gameAnswerNumber(int givenNumber) {
+        GameAnswer gameAnswer = new Number(givenNumber);
         return gameAnswer.getNumber();
 
     }
