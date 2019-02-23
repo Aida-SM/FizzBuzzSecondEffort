@@ -53,4 +53,12 @@ public class MainTest {
                 Assert.assertEquals("Buzz" , main.gameAnswerBuzz(givenNumber));
         }
     }
+
+    @Test
+    public void ShouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfFifteen() {
+        for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
+            if (givenNumber%15==0)
+                Assert.assertEquals("FizzBuzz" , main.gameAnswerFizzBuzz(givenNumber));
+        }
+    }
 }

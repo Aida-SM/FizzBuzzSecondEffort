@@ -25,7 +25,7 @@ public class Main {
     }
 
     public String gameAnswerFizzBuzz(int givenNumber) {
-        GameAnswer gameAnswer = new FizzBuzz(15);
+        GameAnswer gameAnswer = new FizzBuzz(givenNumber);
         return getFinalResult(gameAnswer);
     }
 
