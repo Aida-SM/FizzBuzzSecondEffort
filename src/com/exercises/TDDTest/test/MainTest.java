@@ -22,14 +22,14 @@ public class MainTest {
 
     @Test
     public void shouldReturnFizzWhenNumberIsThree() {
-        GameAnswer gameAnswer = new Fizz(3);
-        AnswerStatus result = gameAnswer.getAnswerStatus();
-        Assert.assertEquals("Fizz",result.name());
+        String result = main.gameAnswerFizz(3);
+        Assert.assertEquals("Fizz",result);
     }
 
     @Test
     public void shouldReturnBuzzWhenNumberIsFive() {
         GameAnswer gameAnswer = new Buzz(5);
+
         AnswerStatus result = gameAnswer.getAnswerStatus();
         Assert.assertEquals("Buzz", result.name());
     }

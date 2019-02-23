@@ -11,4 +11,10 @@ public class Main {
         return gameAnswer.getNumber();
 
     }
+
+    public String gameAnswerFizz(int i) {
+        GameAnswer gameAnswer = new Fizz(3);
+        AnswerStatus result = gameAnswer.getAnswerStatus();
+        return result.name();
+    }
 }
