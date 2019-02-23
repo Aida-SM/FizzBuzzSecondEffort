@@ -2,7 +2,20 @@
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        Main main = new Main();
+        for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
+            if (givenNumber % 15 == 0)
+                System.out.println(main.gameAnswerFizzBuzz(givenNumber));
+            else if (givenNumber % 5 == 0)
+                System.out.println(main.gameAnswerBuzz(givenNumber));
+            else if (givenNumber % 3 == 0)
+                System.out.println(main.gameAnswerFizz(givenNumber));
+            else
+                System.out.println(main.gameAnswerNumber(givenNumber));
+        }
+
+
     }
 
 
