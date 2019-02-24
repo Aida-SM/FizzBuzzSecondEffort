@@ -32,14 +32,12 @@ public class Main {
 
     public static String gameAnswerFizz() {
         GameAnswer gameAnswer = new Fizz();
-        AnswerStatus result = gameAnswer.getAnswerStatus();
-        return result.name();
+        return getFinalResult(gameAnswer);
     }
 
     public static String gameAnswerBuzz() {
         GameAnswer gameAnswer = new Buzz();
-        AnswerStatus result = gameAnswer.getAnswerStatus();
-        return result.name();
+        return getFinalResult(gameAnswer);
     }
 
     public static String gameAnswerFizzBuzz() {
